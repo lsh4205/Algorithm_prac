@@ -8,7 +8,7 @@ for i in range(s):
 	for i in range(1, size):
 		if arr[i] == arr[i-1]:
 			if l == 0:
-				x = i
+				l = i
 			r = i
 	if l == r:
 		print(0)
