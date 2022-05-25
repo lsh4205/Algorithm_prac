@@ -1,5 +1,4 @@
 import sys
-            
 s = int(input())
 for i in range(s):
 	size = int(input())
