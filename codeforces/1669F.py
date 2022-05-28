@@ -19,4 +19,7 @@ for i in range(s):
         if l == r:
             cout = l_p + (n - r_p) -1
     print(cout)
-
+    # Lesson learned from this problem
+    # First trial was good but need to code in a simple way
+    # because I was confused by myself
+    # because of additional condition
