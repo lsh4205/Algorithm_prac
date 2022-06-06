@@ -34,5 +34,13 @@ for x in range(s):
                 l = arr[i]
         print(f'{l_v} {r_v}')
             
-    
+# Cause TLE on the test6 
+# When the value of n is large (usually larger than 10^5)
+# then because there can be high number of collisions so hashmaps gives
+# its worst case time complexity for insertion operations
+# that is O(n) and not O(1) which is why the overall time complexity becomes O(n^2).
+
+# The solution is to use a map as
+# there we don't have a problem of collisions
+# and the time complexity is logn per operation.
             
