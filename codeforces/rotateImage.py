@@ -48,6 +48,19 @@ def rotateOriginal(matrix):
             matrix[i][len(matrix)-j-1] = temp
     print(matrix)
 
+# Save Memory by reducing temp val
+def rotateOriginal2(matrix):
+    # 1. Diagonal Rotation
+    for i in range(len(matrix)):
+        for j in range(i,len(matrix)):
+            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+            print(f'[{i}][{j}]={matrix[i][j]}, [{j}][{i}]={matrix[j][i]}')
+    # 2. Mirrored
+    for j in range(int(len(matrix)/2)):
+        for i in range(len(matrix)):
+            matrix[i][j], matrix[i][~j] = matrix[i][~j], matrix[i][j]
+
 matrix = [[1,2,3],[4,5,6],[7,8,9]] 
 #print(rotateImage(matrix))
-rotateOriginal(matrix)
+#rotateOriginal(matrix)
+rotateOriginal2(matrix)
