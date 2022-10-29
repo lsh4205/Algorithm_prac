@@ -9,7 +9,8 @@
 # Input: strs = ["eat","tea","tan","ate","nat","bat"]
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
-
+# you can use only immutable type as a key in hash map.
+# string and tuple are immutable types in python while list is not.
 def groupAnagrams(strs):
     # first thought : using dictionary
     final_result = []
